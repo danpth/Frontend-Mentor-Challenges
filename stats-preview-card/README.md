@@ -17,8 +17,6 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## Overview
 
-In this challenge I try for the first time to create a responsive webpage using Flexbox.
-
 ### The challenge
 
 Users should be able to:
@@ -37,9 +35,9 @@ Users should be able to:
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - CSS custom properties
-- Flexbox
+- Media queries
 
 ### What I learned
 
@@ -63,7 +61,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [How to Make a Website Responsive](https://www.youtube.com/watch?v=ZYV6dYtz4HA) - This helped me understand how to make a responsive page. The explanation is clear and short.
 
 ## Author
 
