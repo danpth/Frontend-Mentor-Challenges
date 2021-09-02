@@ -1,8 +1,141 @@
-.attribution {
-  font-size: 11px;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@697&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  width: 320px;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+}
+
+.text-box {
+  margin: 20px;
   text-align: center;
 }
 
-.attribution a {
-  color: hsl(228, 45%, 44%);
+.stats-container {
+  text-align: center;
+  margin: 30px;
+}
+
+.stats {
+  margin: 10px;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  color: hsla(0, 0%, 100%, 0.6);
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 100;
+  margin: 10px;
+}
+
+h3 {
+  color: hsl(0, 0%, 100%);
+  font-size: 27px;
+  font-weight: 500;
+  margin: 5px;
+}
+h4 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: 13px;
+  font-weight: 100;
+  margin: 5px;
+}
+
+header {
+  background-color: hsl(277, 77%, 27%);
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+
+aside {
+  background-color: hsl(277, 77%, 27%);
+  overflow: hidden;
+  border-radius: 0px 10px 10px 0px;
+  float: right;
+}
+
+.img-mobile {
+  display: block;
+  border-radius: 10px 10px 0px 0px;
+  opacity: 0.5;
+}
+
+.img-desktop {
+  display: none;
+  border-radius: 0px 10px 0px 10px;
+  opacity: 0.5;
+  float: right;
+}
+
+@media only screen and (min-width: 1440px) {
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
+  }
+
+  .container {
+    display: flex;
+    width: 1050px;
+  }
+
+  .text-box {
+    text-align: left;
+    margin: 50px;
+  }
+
+  .stats-container {
+    display: flex;
+    margin-left: 0px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin-right: 70px;
+    margin-left: 0px;
+  }
+
+  h3 {
+    text-align: left;
+    margin-left: 0px;
+    text-align: left;
+  }
+
+  h4 {
+    margin-left: 0px;
+  }
+
+  .stats {
+    margin-left: 0px;
+    margin-right: 50px;
+  }
 }

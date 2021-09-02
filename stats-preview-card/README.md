@@ -35,9 +35,11 @@ Users should be able to:
 
 ### Built with
 
-- HTML5 markup
+- Semantic HTML5 markup
 - CSS custom properties
 - Media queries
+- Mobile-First workflow
+- Flexbox (Basics)
 
 ### What I learned
 
