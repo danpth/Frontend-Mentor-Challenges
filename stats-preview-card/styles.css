@@ -1,12 +1,17 @@
+/* Font */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@697&display=swap");
 
 * {
   font-family: "Inter", sans-serif;
 }
 
+/* Background */
+
 body {
   background-color: hsl(233, 47%, 7%);
 }
+
+/* Layout */
 
 .container {
   width: 320px;
@@ -28,6 +33,8 @@ body {
   margin: 10px;
 }
 
+/* Centering */
+
 .center {
   margin: 0;
   position: absolute;
@@ -36,6 +43,8 @@ body {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+/* Characters */
 
 h1 {
   color: hsl(0, 0%, 100%);
@@ -64,6 +73,8 @@ h4 {
   margin: 5px;
 }
 
+/* Semantics */
+
 header {
   background-color: hsl(277, 77%, 27%);
   overflow: hidden;
@@ -76,6 +87,8 @@ aside {
   border-radius: 0px 10px 10px 0px;
   float: right;
 }
+
+/*Images*/
 
 .img-mobile {
   display: block;
@@ -90,15 +103,9 @@ aside {
   float: right;
 }
 
-@media only screen and (min-width: 1440px) {
-  .img-mobile {
-    display: none;
-  }
+/* Queries */
 
-  .img-desktop {
-    display: block;
-  }
-
+@media only screen and (min-width: 1200px) {
   .container {
     display: flex;
     width: 1050px;
@@ -112,6 +119,11 @@ aside {
   .stats-container {
     display: flex;
     margin-left: 0px;
+  }
+
+  .stats {
+    margin-left: 0px;
+    margin-right: 50px;
   }
 
   h1 {
@@ -134,8 +146,11 @@ aside {
     margin-left: 0px;
   }
 
-  .stats {
-    margin-left: 0px;
-    margin-right: 50px;
+  .img-mobile {
+    display: none;
+  }
+
+  .img-desktop {
+    display: block;
   }
 }
