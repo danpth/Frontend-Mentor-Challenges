@@ -102,7 +102,7 @@ h2 {
 
 /* Desktop */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 400px) {
   body {
     background-position: bottom 60vh left -20vw, bottom -50vh right -30vw;
   }
