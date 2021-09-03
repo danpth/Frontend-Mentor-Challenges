@@ -106,6 +106,9 @@ h2 {
   body {
     background-position: bottom 60vh left -20vw, bottom -50vh right -30vw;
   }
+  #pro-pic {
+    top: 38%;
+  }
 }
 
 /* Fonts */
