@@ -118,6 +118,18 @@ body {
 
 /* Desktop */
 
+@media only screen and (min-width: 550px) {
+  #head {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  #head {
+    width: 500px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   #container {
     flex-direction: row;
@@ -173,6 +185,12 @@ body {
   }
   #reviewboxdown {
     transform: translateY(-15px);
+  }
+}
+
+@media only screen and (min-width: 2200px) {
+  #reviews {
+    width: 1900px;
   }
 }
 
