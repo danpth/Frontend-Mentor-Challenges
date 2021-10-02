@@ -8,34 +8,59 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ <link rel="stylesheet" href="styles.css">
+ <script defer src="script.js"></script>
 </head>
 <body>
 
-  Learn to code by watching others
+  <div id="container">
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <div id="head">
+      <h1>
+        Learn to code by watching others
+      </h1>
+      <p>
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
 
-  Try it free 7 days then $20/mo. thereafter
+    <div id="blueBox">
+      <div id="boxText">
+        Try it free 7 days <span id="blueText">then $20/mo. thereafter</span>
+      </div>
+      
+    </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
+    <form action="/" method="GET" id="form"> 
 
-  Claim your free trial 
+      <input type="text" id="fname" placeholder="First Name">
+      <div class="error" id="errorF"></div>
 
-  By clicking the button, you are agreeing to our Terms and Services
+      <input type="text" id="lname" placeholder="Last Name">
+      <div class="error" id="errorL"></div>
+
+      <input type="text" id="email" placeholder="Email Address"><div class="error" id="errorE"></div>
+
+      <input type="password" id="password" placeholder="Password">
+      <div class="error" id="errorP"></div>
+
+      <button type="submit" id="greenButton">
+        CLAIM YOUR FREE TRIAL
+      </button>
+
+      <div id="terms">
+        By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+      </div>
+
+    </form>
+    
+  </div>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/danpth" target="_blank">Daniel Choma</a>.
     </p>
   </footer>
 </body>
