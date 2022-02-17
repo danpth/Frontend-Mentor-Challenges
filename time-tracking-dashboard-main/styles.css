@@ -1,0 +1,156 @@
+/*Font*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+/*Layout*/
+
+* {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+body {
+  background-color: hsl(226, 43%, 10%);
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: grid;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.box {
+  width: 330px;
+  height: 130px;
+  margin-top: 40px;
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+}
+
+#profile {
+  width: 330px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: hsl(246, 80%, 60%);
+  transform: translateY(-50px);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.activity {
+  width: 330px;
+  height: 130px;
+  border-radius: 10px;
+  background-color: white;
+  transform: translateY(-40px);
+  margin-top: 70px;
+  display: grid;
+}
+
+#propic {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+#prof {
+  grid-column: 2/3;
+  grid-row: 1/3;
+  padding-top: 33px;
+  padding-left: 5px;
+}
+#pic {
+  width: 60px;
+  height: 60px;
+  border: solid 3px white;
+  border-radius: 45px;
+  position: absolute;
+  left: 35px;
+  top: 26px;
+}
+#timing {
+  width: 330px;
+  height: 40px;
+  transform: translateY(-41px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  padding-top: 8px;
+}
+#day {
+  grid-column: 1;
+}
+#week {
+  grid-column: 2;
+}
+#month {
+  grid-column: 3;
+}
+
+.work {
+  background: url(images/icon-work.svg) no-repeat;
+  background-position: right 15px bottom 60px;
+  background-color: hsl(15, 100%, 70%);
+}
+.play {
+  background: url(images/icon-play.svg) no-repeat;
+  background-position: right 15px bottom 60px;
+  background-color: hsl(195, 74%, 62%);
+}
+.study {
+  background: url(images/icon-study.svg) no-repeat;
+  background-position: right 15px bottom 60px;
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise {
+  background: url(images/icon-exercise.svg) no-repeat;
+  background-position: right 15px bottom 75px;
+  background-color: hsl(145, 58%, 55%);
+}
+.social {
+  background: url(images/icon-social.svg) no-repeat;
+  background-position: right 15px bottom 50px;
+  background-color: hsl(264, 64%, 52%);
+}
+.selfcare {
+  background: url(images/icon-self-care.svg) no-repeat;
+  background-position: right 15px bottom 70px;
+  background-color: hsl(43, 84%, 65%);
+}
+
+/*Texts*/
+
+#report {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: hsl(246, 80%, 90%);
+}
+#name {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/*Footer*/
+
+.attribution {
+  font-size: 0.5rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 0.7rem;
+}
+
+/*Media Queries*/
+
+@media only screen and (min-width: 900px) {
+}

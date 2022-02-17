@@ -30,10 +30,9 @@ body {
 #calculator {
   background-color: white;
   position: absolute;
-  width: 100vw;
+  width: 365px;
   top: 145px;
-
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 25px;
 }
 
 #calcContainer {
@@ -74,6 +73,16 @@ input {
   border-radius: 7px;
 }
 
+.tipButton:hover {
+  background-color: hsl(172, 67%, 75%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tipButton:active {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
 #results {
   background-color: hsl(183, 100%, 15%);
   padding: 25px;
@@ -90,7 +99,7 @@ input {
   font-weight: 700;
 }
 
-.reset {
+#reset {
   color: hsl(183, 100%, 15%);
   font-weight: 700;
   background-color: hsl(172, 67%, 45%);
@@ -98,6 +107,17 @@ input {
   width: 280px;
   padding: 5px;
   border-radius: 7px;
+}
+
+#reset:hover {
+  background-color: hsl(172, 67%, 75%);
+}
+
+#people {
+  background: none;
+  background: url(images/icon-person.svg) no-repeat;
+  background-position: top 12px left 10px;
+  background-color: hsl(189, 41%, 97%);
 }
 
 /*Text*/
@@ -116,8 +136,7 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-  outline: none;
-  border: 2px solid hsl(172, 67%, 45%);
+  outline: 2px solid hsl(172, 67%, 75%);
 }
 
 input[type="textarea"] {
@@ -126,6 +145,10 @@ input[type="textarea"] {
   background: none;
   background-color: hsl(189, 41%, 97%);
   text-align: right;
+}
+
+input[type="textarea"]:focus {
+  outline: 2px solid hsl(172, 67%, 75%);
 }
 
 input[type="textarea"]:placeholder-shown {

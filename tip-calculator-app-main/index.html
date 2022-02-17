@@ -26,7 +26,7 @@
           <div class="fieldName">
             Bill
           </div>
-            <input type="text" id="bill" placeholder="0">
+            <input type="text" id="bill" placeholder="0" onkeypress="return isNumberKey(event)">
         </div>
 
         <div>
@@ -59,7 +59,7 @@
           <div class="fieldName">
             Number of People
           </div>
-          <input type="text" id="" placeholder="0">
+          <input type="text" id="people" value="1" onkeypress="return isNumberKey(event)">
           
         </div>
         
@@ -67,15 +67,15 @@
           <div class="resultField">
             Tip Amount
           </div>
-          <div class="amount">$4.27</div>
+          <div class="amount" id="amountTip">$0.00</div>
           <div class="person">/ person</div>
           <div class="resultField">
             Total
           </div>
-          <div class="amount">$32.79</div>
+          <div class="amount" id="amountTotal">$0.00</div>
           <div class="person">/ person</div>
 
-          <button class="reset">RESET</button>
+          <button id="reset">RESET</button>
 
         </div>
 
