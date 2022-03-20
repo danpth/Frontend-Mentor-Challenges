@@ -1,0 +1,22 @@
+.nav {
+  margin-bottom: 10px !important;
+  margin-top: 20px !important;
+}
+#main-doc {
+  padding: 40px 50px 30px 40px;
+}
+
+.main-section {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+#navbar {
+  padding-top: 20px;
+  padding-right: 30px;
+  position: fixed;
+}
+
+.h2 {
+  margin-bottom: 25px !important;
+}
