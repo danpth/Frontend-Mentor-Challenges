@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube Channel Survey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1 id="title">MewDieMine</h1>
+  <p id="description">Thank you for taking the time to help me improve my channel</p>
+
+  <form action="/results.html" id="survey-form">
+
+    <div class="group">
+      <label for="name" id="name-label">Name</label>
+      <br>
+      <input name="name" id="name" placeholder="Enter your name" class="input-class" required>
+    </div>
+
+    <div class="group">
+      <label for="email" id="email-label">Email</label>
+      <br>
+      <input type="email" name="email" id="email" placeholder="Enter your email" class="input-class" required>
+    </div>
+
+    <div class="group">
+      <label for="age" id="number-label">Age</label>
+      <br>
+      <input type="number" name="age" id="number" placeholder="Age" min="1" max="99" class="input-class" required>
+    </div>
+
+    <div class="group">
+      <label for="occupation">What's your occupation?</label>
+      <br>
+      <select name="occupation" id="dropdown" class="input-class">
+        <option disabled selected value>Choose your occupation</option>
+        <option value="Student" class="option-class">Student</option>
+        <option value="Worker" class="option-class">Worker</option>
+        <option value="Other" class="option-class">Other</option>
+      </select>
+    </div>
+
+    <div class="group">
+      <p>Are you subscribed to my channel?</p>
+      <label>
+        <input type="radio" name="recommendation" value="Yes" class="radio-class"> <span class="choice">Yes</span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="recommendation" value="Not yet" class="radio-class"> <span class="choice">Not Yet</span>
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="recommendation" checked value="No" class="radio-class"> <span class="choice">No</span>
+      </label>
+    </div>
+
+    <div class="group">
+      <p>What kind of contents would you like to see more in my videos?</p>
+      <label>
+        <input name="prefer" type="checkbox" value="prank" class="checkbox-class"> <span class="choice">Pranks</span>
+      </label>
+      <br>
+      <label>
+        <input name="prefer" type="checkbox" value="restaurant" class="checkbox-class"> <span class="choice">Restaurant reviews</span>
+      </label>
+      <br>
+      <label>
+        <input name="prefer" type="checkbox" value="gameplay" class="checkbox-class"> <span class="choice">Gameplay</span>
+      </label>
+      <br>
+      <label>
+        <input name="prefer" type="checkbox" value="cover" class="checkbox-class"> <span class="choice">Guitar covers</span>
+      </label>
+      <br>
+      <label>
+        <input name="prefer" type="checkbox" value="reactions" class="checkbox-class"> <span class="choice">TV-Series reactions</span>
+      </label>
+    </div>
+
+    <div class="group">
+      <p>Anything else you would like me to know?</p>
+      <textarea name="comments" id="comments" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div class="group">
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </div>
+
+  </form>
+  
+</body>
+
+</html>

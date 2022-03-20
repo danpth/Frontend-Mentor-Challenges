@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+* {
+  font-family: Rubik;
+  font-size: 24px;
+}
+
+#main {
+  background-color: #eee;
+  margin: 20px 10px 20px 10px;
+  padding: 20px;
+}
+
+#title {
+  text-align: center;
+  font-size: 2em;
+  margin: 15px;
+}
+
+#subtitle {
+  text-align: center;
+  font-size: 1em;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+#div-img {
+  background-color: white;
+  margin: 10px;
+  padding: 5px;
+}
+
+#img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+}
+
+#img-caption {
+  text-align: center;
+  margin: 20px auto 20px auto;
+  font-weight: 300;
+  font-size: 0.7em;
+  width: 45%;
+}
+
+#timeline-title {
+  text-align: center;
+  margin: 40px;
+  font-size: 0.9em;
+}
+
+ul {
+  text-align: left;
+  margin: 10px auto 40px auto;
+  max-width: 600px;
+}
+
+li {
+  margin: 10px;
+  font-size: 0.8em;
+}
+
+.listrong {
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+#quote {
+  text-align: left;
+  margin: 60px auto 40px auto;
+  max-width: 600px;
+}
+
+#link {
+  text-align: center;
+  margin: 10px auto 30px auto;
+}
+
+@media (max-width: 400px) {
+  * {
+    font-size: 17px;
+  }
+
+  #title {
+    margin: 5px;
+  }
+
+  #div-img {
+    margin: 0;
+  }
+  #img-center {
+    width: 100%;
+  }
+  #img-caption {
+    width: 90%;
+    font-weight: 400;
+  }
+}
