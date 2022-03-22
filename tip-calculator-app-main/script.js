@@ -4,22 +4,30 @@ const people = document.getElementById('people-input');
 const totalTip = document.getElementById('tip-total');
 const total = document.getElementById('total');
 const reset = document.querySelector('.reset-btn');
+const customBtnInit = document.getElementById('custom');
+const customBtn = customBtnInit.children[0];
 
 let currentPercent = 5;
 let billValue = 0;
 let peopleNumber = 1;
 let totalTipValue = 0;
 let totalValue = 0;
-
+let customValue = 1;
 
 function tipBtnClick (){
   for(let i = 0; i < btns.length; i++){
     btns[i].addEventListener('click', function() {
       
-      let currentBtn = document.querySelector('.active-btn');
-      currentBtn.className = currentBtn.className.replace('active-btn', '');
+      //let currentBtn = document.querySelector('.active-btn');
+      //currentBtn.className = currentBtn.className.replace('active-btn', '');
+      for (let j = 0; j < btns.length; j++){
+        if(btns[j].classList.contains('active-btn')){
+          btns[j].className = btns[j].className.replace('active-btn', '');
+        }
+      }
       this.className += (' active-btn');
       currentPercent = Number(this.id);
+      customBtn.value = '';
       calculate();
     });
     
@@ -30,7 +38,7 @@ function tipBtnClick (){
 
 
 bill.onkeyup = function(){
-  if(bill.value < 10000){
+  if(bill.value < 100000){
     billValue = Number(bill.value);
   }
   
@@ -45,23 +53,48 @@ bill.addEventListener('focusout', function(){
 });
 
 people.onkeyup = function(){
-  if(/^[0-9]*$/g.test(people.value) && people.value < 1000){
-    peopleNumber = Number(people.value);
+  if(/^[0-9]*$/g.test(people.value) && people.value < 999){
+    peopleNumber = Number(people.value).toFixed();
   }
-  if(people.value.length < 0){
-    peopleNumber = 1;
+  if(people.value ===''){
+    people.value = '';
+  }else{
+    people.value = peopleNumber;
   }
-  people.value = peopleNumber;
+  
+
+
 
   calculate();
 
 }
 
-/*function custom(){
-  console.log('hi');
-  let currentBtn = document.querySelector('.active-btn');
-  currentBtn.className = currentBtn.className.replace('active-btn', ' ');
-}*/
+const customBtnOnKeyUp = customBtn.addEventListener('keyup',function(){
+  
+  //Deactivate normal buttons
+  for(let i = 0; i < btns.length; i++){
+    if(btns[i].classList.contains('active-btn')){
+      btns[i].className = btns[i].className.replace('active-btn', '')
+    }
+  }
+  customValue = customBtn.value;
+
+  if(customValue === ''){
+    currentPercent = 5;
+    document.getElementById('5').className += ('active-btn');
+  }else{
+    currentPercent = Number(customValue);
+  }
+  
+  if(currentPercent>100){
+    currentPercent = 100;
+    customValue = 100;
+  }
+  customBtn.value = customValue;
+  calculate();
+  console.log(customValue);
+})
+
 
 reset.onclick = function (){
   bill.value = '';
