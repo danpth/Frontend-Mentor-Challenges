@@ -101,10 +101,17 @@ reset.onclick = function (){
   billValue = 0;
   people.value = '';
   peopleNumber = 0;
+  customValue = 1;
+  customBtn.value = '';
   totalTip.innerHTML = '$0.00';
   total.innerHTML = '$0.00';
-  let currentBtn = document.querySelector('.active-btn');
-  currentBtn.className = currentBtn.className.replace('active-btn', ' ');
+  //let currentBtn = document.querySelector('.active-btn');
+  //currentBtn.className = currentBtn.className.replace('active-btn', ' ');
+  for (let j = 0; j < btns.length; j++){
+    if(btns[j].classList.contains('active-btn')){
+      btns[j].className = btns[j].className.replace('active-btn', '');
+    }
+  }
   document.getElementById('5').className += ('active-btn');
   currentPercent = 5;
 }

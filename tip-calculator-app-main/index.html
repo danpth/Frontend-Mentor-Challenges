@@ -22,79 +22,83 @@
     <main class="calculator-container">
       <div class="calculator">
 
-        <div class="bill-section sec">
-        
-          <div class="section-name">Bill</div>
-        
-          <div class="input-container">
-            <input type="number" id="bill-input" placeholder="0,00">
-            <i class="icon"><img src="./images/icon-dollar.svg" alt=""></i>
-          </div>
-        
-        </div>
-        
-        <div class="tip-btn-section sec">
-        
-          <div class="section-name">Select Tip %</div>
-        
-          <div class="btns-section">
-        
-            <span class="tip-btn tip-btn-normal get-percentage active-btn" id="5">5%</span>
-        
-            <span class="tip-btn tip-btn-normal get-percentage" id="10">10%</span>
-        
-            <span class="tip-btn tip-btn-normal get-percentage" id="15">15%</span>
-        
-            <span class="tip-btn tip-btn-normal get-percentage" id="25">25%</span>
-        
-            <span class="tip-btn tip-btn-normal get-percentage" id="50">50%</span>
-        
-            <span class="tip-btn get-percentage" id="custom">
-        
-              <input type="number" class="get-percentage" #id="custom-tip" placeholder="Custom">
-        
-            </span>
-        
-          </div>
-        </div>
-        
-        <div class="people-section sec">
-        
-          <div class="section-name">Number of People</div>
-        
-          <div class="input-container">
-            <input type="number" id="people-input" placeholder="1">
-            <i class="icon"><img src="./images/icon-person.svg"></i>
-          </div>
-        
-        </div>
-        
-        <div class="result-section sec">
-        
-          <div class="result-section-grid">
-        
-            <div class="result tip-result">
-              <span class="result-left">
-                <div class="text-up">Tip Amount</div>
-                <div class="text-down">/ person</div>
-              </span>
-              <span class="result-right"><span class="result-number" id="tip-total">$0,00</span></span>
+        <div class="desktop-left">
+          <div class="bill-section sec">
+          
+            <div class="section-name">Bill</div>
+          
+            <div class="input-container">
+              <input type="number" id="bill-input" placeholder="0,00">
+              <i class="icon"><img src="./images/icon-dollar.svg" alt=""></i>
             </div>
-        
-            <div class="result total-result">
-              <span class="result-left">
-                <div class="text-up">Total</div>
-                <div class="text-down">/ person</div>
-              </span>
-              <span class="result-right"><span class="result-number" id="total">$0,00</span></span>
-            </div>
-        
+          
           </div>
-        
-          <div class="reset-btn">RESET</div>
-        
+          
+          <div class="tip-btn-section sec">
+          
+            <div class="section-name">Select Tip %</div>
+          
+            <div class="btns-section">
+          
+              <span class="tip-btn tip-btn-normal get-percentage active-btn" id="5">5%</span>
+          
+              <span class="tip-btn tip-btn-normal get-percentage" id="10">10%</span>
+          
+              <span class="tip-btn tip-btn-normal get-percentage" id="15">15%</span>
+          
+              <span class="tip-btn tip-btn-normal get-percentage" id="25">25%</span>
+          
+              <span class="tip-btn tip-btn-normal get-percentage" id="50">50%</span>
+          
+              <span class="tip-btn get-percentage" id="custom">
+          
+                <input type="number" class="get-percentage" #id="custom-tip" placeholder="Custom">
+          
+              </span>
+          
+            </div>
+          </div>
+          
+          <div class="people-section sec">
+          
+            <div class="section-name">Number of People</div>
+          
+            <div class="input-container">
+              <input type="number" id="people-input" placeholder="1">
+              <i class="icon"><img src="./images/icon-person.svg"></i>
+            </div>
+          
+          </div>
         </div>
-
+        
+        <div class="desktop-right">
+          <div class="result-section sec">
+          
+            <div class="result-section-grid">
+          
+              <div class="result tip-result">
+                <span class="result-left">
+                  <div class="text-up">Tip Amount</div>
+                  <div class="text-down">/ person</div>
+                </span>
+                <span class="result-right"><span class="result-number" id="tip-total">$0,00</span></span>
+              </div>
+          
+              <div class="result total-result">
+                <span class="result-left">
+                  <div class="text-up">Total</div>
+                  <div class="text-down">/ person</div>
+                </span>
+                <span class="result-right"><span class="result-number" id="total">$0,00</span></span>
+              </div>
+          
+            </div>
+          
+            <div class="reset-btn">RESET</div>
+          
+          </div>
+        </div>
+        
       </div>
       
 
