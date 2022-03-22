@@ -2,94 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <link rel="stylesheet" href="styles.css">
-
-  <script defer src="script.js"></script>
-
+  <title>Tip Calculator App</title>
+  <link rel="stylesheet" href="dist\css/styles.min.css">
 </head>
 <body>
+  
+  <div class="app-container">
 
-  <div id="container">
-    <div id="logo">
-      <img src="images/logo.svg" alt="logo">
-    </div>
-    <div id="calculator">
-      <div id="calcContainer">
+    <header class="logo-section">
 
-        <div>
-          <div class="fieldName">
-            Bill
-          </div>
-            <input type="text" id="bill" placeholder="0" onkeypress="return isNumberKey(event)">
-        </div>
+      <div class="logo-container">
+        <img src="./images/logo.svg" alt="">
+      </div>
 
-        <div>
-          <div class="fieldName">
-            Select Tip %
-          </div>
-          <div id="tips">
-          
-            <button class="tipButton">
-              5%
-            </button>
-            <button class="tipButton">
-              10%
-            </button>
-            <button class="tipButton">
-              15%
-            </button>
-            <button class="tipButton">
-              20%
-            </button>
-            <button class="tipButton">
-              25%
-            </button>
-            <input type="textarea" placeholder="Custom">
-          </div>
-                
-        </div>
+    </header>
+    
+    <main class="calculator-container">
+      <div class="calculator">
 
-        <div>
-          <div class="fieldName">
-            Number of People
+        <div class="bill-section sec">
+        
+          <div class="section-name">Bill</div>
+        
+          <div class="input-container">
+            <input type="number" id="bill-input" placeholder="0,00">
+            <i class="icon"><img src="./images/icon-dollar.svg" alt=""></i>
           </div>
-          <input type="text" id="people" value="1" onkeypress="return isNumberKey(event)">
-          
+        
         </div>
         
-        <div id="results">
-          <div class="resultField">
-            Tip Amount
+        <div class="tip-btn-section sec">
+        
+          <div class="section-name">Select Tip %</div>
+        
+          <div class="btns-section">
+        
+            <span class="tip-btn tip-btn-normal get-percentage active-btn" id="5">5%</span>
+        
+            <span class="tip-btn tip-btn-normal get-percentage" id="10">10%</span>
+        
+            <span class="tip-btn tip-btn-normal get-percentage" id="15">15%</span>
+        
+            <span class="tip-btn tip-btn-normal get-percentage" id="25">25%</span>
+        
+            <span class="tip-btn tip-btn-normal get-percentage" id="50">50%</span>
+        
+            <span class="tip-btn get-percentage" id="custom">
+        
+              <input type="text" class="get-percentage" #id="custom-tip" placeholder="Custom" onkeyup="custom()">
+        
+            </span>
+        
           </div>
-          <div class="amount" id="amountTip">$0.00</div>
-          <div class="person">/ person</div>
-          <div class="resultField">
-            Total
+        </div>
+        
+        <div class="people-section sec">
+        
+          <div class="section-name">Number of People</div>
+        
+          <div class="input-container">
+            <input type="tel" id="people-input" placeholder="1">
+            <i class="icon"><img src="./images/icon-person.svg"></i>
           </div>
-          <div class="amount" id="amountTotal">$0.00</div>
-          <div class="person">/ person</div>
-
-          <button id="reset">RESET</button>
-
+        
+        </div>
+        
+        <div class="result-section sec">
+        
+          <div class="result-section-grid">
+        
+            <div class="result tip-result">
+              <span class="result-left">
+                <div class="text-up">Tip Amount</div>
+                <div class="text-down">/ person</div>
+              </span>
+              <span class="result-right"><span class="result-number" id="tip-total">$0,00</span></span>
+            </div>
+        
+            <div class="result total-result">
+              <span class="result-left">
+                <div class="text-up">Total</div>
+                <div class="text-down">/ person</div>
+              </span>
+              <span class="result-right"><span class="result-number" id="total">$0,00</span></span>
+            </div>
+        
+          </div>
+        
+          <div class="reset-btn">RESET</div>
+        
         </div>
 
       </div>
       
-      
 
-    </div>
+    </main>
+
   </div>
 
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="github.com/danpth">Daniel Choma</a>.
-  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>

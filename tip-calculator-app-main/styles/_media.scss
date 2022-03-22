@@ -1,0 +1,14 @@
+@media screen and (min-width: 460px) {
+  .calculator-container {
+    display: flex;
+    justify-content: center;
+  }
+  .calculator {
+    width: 460px;
+    border-radius: 30px;
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+}
