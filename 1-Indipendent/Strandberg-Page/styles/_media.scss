@@ -1,0 +1,22 @@
+@media screen and (min-width: 950px) {
+  body {
+    font-size: 26px;
+  }
+  .nav {
+    width: 950px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .sections-container {
+    width: 950px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .feat-name {
+    font-size: 2.7rem !important;
+  }
+  .description {
+    line-height: 2.2rem !important;
+  }
+}
