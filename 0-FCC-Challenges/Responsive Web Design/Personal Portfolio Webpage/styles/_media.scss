@@ -1,0 +1,28 @@
+@media screen and (min-width: 450px){
+  *{
+    font-size: 26px;
+  }
+
+  #navbar{
+    justify-content: end;
+    a{
+      margin: 0px 0.6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 700px){
+  *{
+    font-size: 30px;
+  }
+
+  #navbar{
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1400px){
+  *{
+    font-size: 35px;
+  }
+}
